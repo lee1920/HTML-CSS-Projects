@@ -1,0 +1,453 @@
+/* Selector rules*/
+body{
+    background-color: palevioletred;
+}
+div{
+    display: grid;
+}
+
+
+/* Starting style rules for mobile screens*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+.container{
+    display: grid;
+    border-style: inset;
+    border-color: red;
+    border-width: auto;
+    background-color: lightpink;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 100px 600px 50px;
+    grid-template-areas: 
+    "hd hd"
+    "sd sd"
+    "main main"
+    "ft ft"
+}
+#box1{
+    grid-area: hd;
+    width: auto;
+    outline: inset;
+    outline-color: red;
+    outline-offset: -10px;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+#box2{
+    grid-area: sd;
+    width: auto;
+    outline: inset;
+    outline-color: red;
+    background-color:rgb(247, 232, 119);
+    outline-offset: -10px;
+    justify-content: left;
+    padding-left: 25px;
+}
+#box2_inside{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 25%);
+    grid-template-areas: 
+    "co"
+    "list";
+}
+#cont{
+    grid-area: co;
+}
+#ls{
+    grid-area: list;
+}
+
+#box3{
+    grid-area: main;
+    width: auto;
+    outline: inset;
+    outline-color: red;
+    background-color:blanchedalmond;
+    outline-offset: -10px;
+    justify-content: center;
+}
+#box3_inside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box3"
+    "box4 box4";
+    padding-left: 45px;
+
+}
+    #info{
+        grid-area: box1;
+    }
+
+    #one{
+        grid-area: box2;
+        height:150px;
+        width: 200px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-left: 25px;
+        }
+    
+    .photo{
+        display: grid;
+        width: 100px;
+        height: 75px;
+        border: 2px solid deepskyblue;
+        background-color: hotpink;
+        justify-content: center;
+
+        }
+    #pic1{
+        background-image: url('mintchoc.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #pic2{
+        background-image: url('strawb.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #pic3{
+        background-image: url('van.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #pic4{
+        background-image: url('choc.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #two{
+        grid-area: box3;
+    }
+    #three{
+        grid-area: box4;
+    }
+    #button{
+        border-style: inset;
+        border-color: whitesmoke;
+        border-width: auto;
+        background-color: aqua;
+    }
+    #caption{
+        font-style: italic;
+        font-size: 8pt;
+        width: 200px;
+    }
+
+ #box4{
+    grid-area: ft;
+    width: auto;
+    outline: inset;
+    outline-color: red;
+    outline-offset: -10px;
+    justify-content: center;
+    }
+}
+/* Breakpoint for medium screens*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        display: grid;
+        border-style: inset;
+        border-color: red;
+        border-width: auto;
+        background-color: lightpink;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 700px 100px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "ft ft ft ft";
+        }
+    div{
+        display: grid;
+        justify-content: center;}
+    #box1{
+        grid-area: hd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+        justify-content: center;
+        font-size: xx-large;
+
+    }
+    
+    #box2{
+        grid-area: sd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:rgb(247, 232, 119);
+        outline-offset: -10px;
+    }
+    #box2_inside{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        "co"
+        "list";
+        justify-content: left;
+  }
+    #cont{
+        grid-area: co;
+    }
+    #ls{
+        grid-area: list;
+    }
+
+    #box3{
+        grid-area: main;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:blanchedalmond;
+        outline-offset: -10px;
+        justify-content: center;
+        padding-left: 25px;
+
+    }
+    #box3_inside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box3"
+        "box4 box4";
+    }
+        #info{
+            grid-area: box1;
+        }
+
+        #one{
+            grid-area: box2;
+            height:200px;
+            width: 300px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            padding-top: 20px;
+            padding-right: 30px;
+            }
+        
+        .photo{
+            display: grid;
+            width: 150px;
+            height: 100px;
+            border: 2px solid deepskyblue;
+            background-color: hotpink;
+            }
+            #pic1{
+                background-image: url('mintchoc.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic2{
+                background-image: url('strawb.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic3{
+                background-image: url('van.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic4{
+                background-image: url('choc.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        
+        #two{
+            grid-area: box3;
+        }
+        #three{
+            grid-area: box4;
+        }
+
+        #button{
+            border-style: inset;
+            border-color: whitesmoke;
+            border-width: auto;
+            background-color: aqua;
+        }
+        #caption{
+            font-style: italic;
+            font-size: 8pt;
+            width: 350px;
+        }
+    
+    #box4{
+        grid-area: ft;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+
+}
+/* Breakpoint for larger screens*/
+@media(min-width: 1025px){
+    .container{
+        display: grid;
+        border-style: inset;
+        border-color: red;
+        border-width: auto;
+        background-color: lightpink;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 600px 100px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd main main main"
+        "ft ft ft ft";
+        }
+    div{
+        display: flex;
+        justify-content: center;}
+    #box1{
+        grid-area: hd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+        justify-content: center;
+        font-size: xx-large;
+    }
+    
+    #box2{
+        grid-area: sd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:rgb(247, 232, 119);
+        outline-offset: -5px;
+    }
+    #box2_inside{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        "co"
+        "list";
+    }
+    #cont{
+        grid-area: co;
+    }
+    #ls{
+        grid-area: list;
+    }
+    
+    #box3{
+        grid-area: main;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:blanchedalmond;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+    #box3_inside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box3"
+        "box4 box4";
+        padding-left: 25px;
+    }
+        #info{
+            grid-area: box1;
+            font-size: xx-large;
+        }
+
+        #one{
+            grid-area: box2;
+            height:300px;
+            width: 400px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            padding-top: 20px;
+            padding-right: 30px;
+            }
+        
+        .photo{
+            display: grid;
+            width: 200px;
+            height: 150px;
+            border: 2px solid deepskyblue;
+            background-color: hotpink;
+            }
+            #pic1{
+                background-image: url('mintchoc.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic2{
+                background-image: url('strawb.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic3{
+                background-image: url('van.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            #pic4{
+                background-image: url('choc.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+    
+       #two{
+           grid-area: box3;
+           font-size: larger;
+
+       }
+       #three{
+        grid-area: box4;
+    }
+    #button{
+        border-style: inset;
+        border-color: whitesmoke;
+        border-width: auto;
+        background-color: aqua;
+    }
+
+    #caption{
+        font-style: italic;
+        font-size: 10pt;
+        width: 450px;
+    }
+    
+    #box4{
+        grid-area: ft;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+
+
+
+}
+
+
