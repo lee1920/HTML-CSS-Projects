@@ -1,0 +1,297 @@
+/* Starting style rules for mobile screens*/
+
+
+/* 200px x 320px*/
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+    .container{
+        display: grid;
+        border-style: inset;
+        border-color: red;
+        border-width: auto;
+        background-color: bisque;
+        width: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 80px 250px 400px 100px;
+        grid-template-areas: 
+        "hd au"
+        "hd au"
+        "main main"
+        "ft ft"
+    }
+    #box1{
+        grid-area: hd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color: lightsalmon;
+        outline-offset: -10px;
+        justify-content: center;
+        padding-left: 25px;
+        padding-top: 35px;
+        font-size: large;
+    
+    }
+    
+    #box2{
+        grid-area: au;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:darkseagreen ;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+    #box2_in{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15% 35% 40%;
+        grid-template-areas: 
+        "ausm ausm ausm"
+        "photo photo photo"
+        "bio bio bio";
+        padding-top: 12px;
+        padding-left: 12px;
+        
+    }
+    #un{
+        grid-area: ausm;
+        font-style:italic;
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    #deux{
+        grid-area: photo;
+        border-radius: 70%;
+    }
+    #trois{
+        grid-area: bio;
+        font-size: 7pt;
+        width: 75%;
+        margin: auto;
+        
+    }
+    
+    #box3{
+        grid-area: main;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+    }
+    #box3_in{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 12% 50%;
+        grid-template-areas: 
+        "head head head"
+        "pg pg pg"
+        ;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    #flavor{
+        grid-area: head;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+    #lorem{
+        grid-area: pg;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 6pt;
+    
+    }
+    
+    #box4{
+        grid-area: ft;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:goldenrod;
+        outline-offset: -10px;
+        justify-content: center;
+        }
+        #box4_in{
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        
+        #uno{
+            font-size: 8pt;
+            margin: 5px;    
+        }
+        #dos{
+            font-size: 8pt;
+            margin: 5px;    
+        }
+        #tres{
+            font-size: 8pt;
+            margin: 5px;    
+        }
+        #quatro{
+            font-size: 8pt;
+            margin: 5px;    
+        }
+        #cinco{
+            font-size: 8pt;
+            margin: 5px;    
+        }
+        
+        .photo{
+            background-image: url('authorphoto.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 80%;  
+            }
+    }
+
+
+/* 321px x 767px*/
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    .container{
+        display: grid;
+        border-style: inset;
+        border-color: red;
+        border-width: auto;
+        background-color: bisque;
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 250px 400px 100px;
+        grid-template-areas: 
+        "hd au"
+        "hd au"
+        "main main"
+        "ft ft"
+    }
+    #box1{
+        grid-area: hd;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color: lightsalmon;
+        outline-offset: -10px;
+        justify-content: center;
+        padding-left: 25px;
+        padding-top: 35px;
+        font-size: x-large;
+    
+    }
+    
+    #box2{
+        grid-area: au;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:darkseagreen ;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+    #box2_in{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15% 35% 40%;
+        grid-template-areas: 
+        "ausm ausm ausm"
+        "photo photo photo"
+        "bio bio bio";
+        justify-content: center;
+        padding-top: 12px;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        width: fit-content;
+        block-size: fit-content;    
+    }
+    #un{
+        grid-area: ausm;
+        font-style:italic;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    #deux{
+        grid-area: photo;
+    }
+    #trois{
+        grid-area: bio;
+        font-size: 9pt;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #box3{
+        grid-area: main;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        outline-offset: -10px;
+        justify-content: center;
+    }
+    #box3_in{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 50%;
+        grid-template-areas: 
+        "head head head"
+        "pg pg pg"
+        ;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    #flavor{
+        grid-area: head;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+    }
+    #lorem{
+        grid-area: pg;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 7.5pt;
+    
+    }
+    
+    #box4{
+        grid-area: ft;
+        width: auto;
+        outline: inset;
+        outline-color: red;
+        background-color:goldenrod;
+        outline-offset: -10px;
+        justify-content: center;
+        }
+        #box4_in{
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        
+        #uno{
+            margin: 5px;    
+        }
+        #dos{
+            margin: 5px;    
+        }
+        #tres{
+            margin: 5px;    
+        }
+        #quatro{
+            margin: 5px;    
+        }
+        #cinco{
+            margin: 5px;    
+        }
+        
+        .photo{
+            background-image: url('authorphoto.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 80%;  
+            }
+    }
