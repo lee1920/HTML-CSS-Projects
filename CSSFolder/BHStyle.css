@@ -1,7 +1,7 @@
 /* Imports for media adjustments for different sizes*/
-@import "BHStyleSMALL.css";
-@import "BHStyleMED.css";
-@import "BHStyleLARGE.css";
+@import "CSSFolder/BHStyleSMALL.css";
+@import "CSSFolder/BHStyleMED.css";
+@import "CSSFolder/BHStyleLARGE.css";
 
 /* Selector rules*/
 body{
