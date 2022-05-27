@@ -135,7 +135,7 @@
     }
   
     .photo{
-        background-image: url('authorphoto.jpg');
+        background-image: url('../ImagesFolder/authorphoto.jpg');
         background-size: cover;
         background-position: center;
         height: 200px;
