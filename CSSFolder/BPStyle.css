@@ -1,7 +1,7 @@
 /* Imports for media adjustments for different sizes*/
-@import "BPStyleSMALL.css";
-@import "BPStyleMED.css";
-@import "BPStyleLARGE.css";
+@import "CSSFolder/BPStyleSMALL.css";
+@import "CSSFolder/BPStyleMED.css";
+@import "CSSFolder/BPStyleLARGE.css";
 
 /* Selector rules*/
 body{
