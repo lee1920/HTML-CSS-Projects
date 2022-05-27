@@ -95,22 +95,22 @@
             background-color: hotpink;
             }
             #pic1{
-                background-image: url('mintchoc.jpg');
+                background-image: url('../ImagesFolder/mintchoc.jpg');
                 background-size: cover;
                 background-position: center;
             }
             #pic2{
-                background-image: url('strawb.jpg');
+                background-image: url('../ImagesFolder/strawb.jpg');
                 background-size: cover;
                 background-position: center;
             }
             #pic3{
-                background-image: url('van.jpg');
+                background-image: url('../ImagesFolder/van.jpg');
                 background-size: cover;
                 background-position: center;
             }
             #pic4{
-                background-image: url('choc.jpg');
+                background-image: url('../ImagesFolder/choc.jpg');
                 background-size: cover;
                 background-position: center;
             }
