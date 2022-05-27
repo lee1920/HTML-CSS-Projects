@@ -1,0 +1,26 @@
+/* Imports for media adjustments for different sizes*/
+@import "BHStyleSMALL.css";
+@import "BHStyleMED.css";
+@import "BHStyleLARGE.css";
+
+/* Selector rules*/
+body{
+    background-color: palevioletred;
+}
+
+div{
+    display: grid;
+}
+header{
+    display: grid;
+}
+footer{
+    display: grid;
+}
+
+
+
+
+
+
+
